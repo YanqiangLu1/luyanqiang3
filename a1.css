@@ -1,0 +1,12 @@
+setTimeout(function(){
+    $(".banner .slick-active .a1").focus();
+},500);
+
+$(".home6 .frame").slick({
+    autoplay:true,
+    autoplaySpeed:6000,
+    speed:600,
+    dots:false,
+    arrows:false
+});
+
