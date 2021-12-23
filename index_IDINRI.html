@@ -24,10 +24,10 @@ body,td,th {
   </tr>
   <tr>
     <td width="593" rowspan="2" align="left" valign="middle"><article style="font-size: xx-large; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">
-      <p><a href="https://lu-13579.shinyapps.io/IDINRI_logistic/" target="_blank"><strong>点击此处进行分析（logistic）</strong></a></p>
+      <p><a href="https://lu-13579.shinyapps.io/IDINRI_logistic/" target="_blank"><strong>点击此处进行分析（基于logistic回归模型）</strong></a></p>
     </article></td>
     <td width="258" height="48" align="left" valign="top">&nbsp;</td>
-    <td width="725" rowspan="2" align="left" valign="middle"><a href="https://lu-13579.shinyapps.io/IDINRI_cox/" target="_blank"><strong style="font-size: xx-large">点击此处进行分析（生存数据）</strong></a></td>
+    <td width="725" rowspan="2" align="left" valign="middle"><strong style="font-size: xx-large"><a href="https://lu-13579.shinyapps.io/IDINRI_cox/" target="_blank">点击此处进行分析（基于Cox回归模型）</a></strong></td>
   </tr>
   <tr>
     <td height="142" align="left" valign="top">&nbsp;</td>
@@ -47,28 +47,31 @@ body,td,th {
       <strong><span style="font-size: 32px">注： </span></strong><br>
       <span style="font-size: 32px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">
       <article style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、数据格式为“.csv”<br>
-  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文 <br>
+  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文或阿拉伯数字 <br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、&nbsp;&nbsp;NRI的结果一般读取连续型结果，即第2个 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、&nbsp;&nbsp;模型2的变量要在模型1的基础上增加 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、  &nbsp;Cut off value的值可不填，一般需要分类型NRI时才需填写</article>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、  &nbsp;Cut off value的值可不填，一般需要分类型NRI时才需填写<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6、&nbsp;&nbsp;若输入无误，数据较大时，请稍作等待 </article>
       </span> <br>      
     <br></td>
     <td rowspan="2" align="left" valign="top" style="font-size: 24px">&nbsp;</td>
     <td width="725" align="left" valign="top"><p><img src="image/IDINRI/image6.png" width="510" height="311"  alt=""/><br>
       <strong><span style="font-size: 32px">注： </span></strong><br>
       <span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、数据格式为“.csv”<br>
-  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文 </span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">3、&nbsp;&nbsp;模型2的变量要在模型1的基础上增加</span><br>      
+  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文或阿拉伯数字 </span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">3、&nbsp;&nbsp;模型2的变量要在模型1的基础上增加</span><br>
+<span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、&nbsp;&nbsp;若输入无误，数据较大时，请稍作等待 </span><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、*基于cox回归模型生成的NRI为标准值的一半（详见<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3341973/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3341973/</a>）<br>      
       <br>
     </p></td>
   </tr>
   <tr>
     <td align="left" valign="top"><span style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">二、输出结果展示</span><br>
-      <p>输出结果包括IDI,NRI（连续），NRI（分类）等，常使用连续的NRI<br>
+      <p>输出结果包括IDI、NRI（连续）、NRI（分类）结果，常使用连续的NRI<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例如下： </p>
     <p><img src="image/IDINRI/image2.png" width="827" height="753"  alt=""/></p></td>
     <td align="left" valign="top"><span style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">二、输出结果展示</span><br>
-      <p>输出结果包括IDI，NRI的结果等。<br>
+      <p>输出结果包括IDI，NRI的相关结果。<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例如下</p>
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/IDINRI/image4.png" width="441" height="172"  alt=""/></p></td>
   </tr>
