@@ -33,9 +33,9 @@ body,td,th {
     <td height="142" align="left" valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td height="102" align="left" valign="top"><img src="image/IDINRI/image1.png" width="576" height="789"  alt=""/></td>
+    <td height="102" align="left" valign="top"><img src="image/IDINRI/1.jpg" width="600" height="1019"  alt=""/></td>
     <td align="left" valign="top">&nbsp;</td>
-    <td align="left" valign="top"><img src="image/IDINRI/image3.png" width="575" height="776"  alt=""/></td>
+    <td align="left" valign="top"><img src="image/IDINRI/2.jpg" width="600" height="941"  alt=""/></td>
   </tr>
   <tr>
     <td height="84" align="left" valign="middle"><span style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">一、数据格式</span></td>
@@ -47,32 +47,33 @@ body,td,th {
       <strong><span style="font-size: 32px">注： </span></strong><br>
       <span style="font-size: 32px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">
       <article style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、数据格式为“.csv”<br>
-  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文或阿拉伯数字 <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、&nbsp;&nbsp;NRI的结果一般读取连续型结果，即第2个 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、&nbsp;&nbsp;模型2的变量要在模型1的基础上增加 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、  &nbsp;Cut off value的值可不填，一般需要分类型NRI时才需填写<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6、&nbsp;&nbsp;若输入无误，数据较大时，请稍作等待 </article>
+  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文、阿拉伯数字或下划线的组合<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、NRI的结果一般读取连续型结果，即第2个 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、模型2的变量要在模型1的基础上增加 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、Cut-off value的值可不填，一般需要分类型NRI时才需填写<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6、自变量（Explanatory variable）可以输入多列，以英文状态下的逗号或冒号分隔，如：2,3,4或2:4      </article>
       </span> <br>      
     <br></td>
     <td rowspan="2" align="left" valign="top" style="font-size: 24px">&nbsp;</td>
     <td width="725" align="left" valign="top"><p><img src="image/IDINRI/image6.png" width="510" height="311"  alt=""/><br>
       <strong><span style="font-size: 32px">注： </span></strong><br>
       <span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、数据格式为“.csv”<br>
-  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文或阿拉伯数字 </span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">3、&nbsp;&nbsp;模型2的变量要在模型1的基础上增加</span><br>
-<span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、&nbsp;&nbsp;若输入无误，数据较大时，请稍作等待 </span><br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、*基于cox回归模型生成的NRI为标准值的一半（详见<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3341973/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3341973/</a>）<br>      
+  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文、阿拉伯数字或下划线的组合</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">3、模型2的变量要在模型1的基础上增加</span><br>
+<span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、采用重采样方法计算95%可信区间，运行需花费一定时间</span><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、<span style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">NRI corresponds to the quantity defined as &ldquo;1/2 NRI(&gt;0)&rdquo; in Pencina et al.(2011)</span>（详见<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3341973/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3341973/</a>）<br>
+ <span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6、自变量（Explanatory variable）可以输入多列，以英文状态下的逗号或冒号分隔，如：2,3,4或2:4</span> <br>      
       <br>
     </p></td>
   </tr>
   <tr>
     <td align="left" valign="top"><span style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">二、输出结果展示</span><br>
-      <p>输出结果包括IDI、NRI（连续）、NRI（分类）结果，常使用连续的NRI<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例如下： </p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出结果包括IDI、NRI（连续）、NRI（分类）结果，常使用连续的NRI<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例如下： </p>
     <p><img src="image/IDINRI/image2.png" width="827" height="753"  alt=""/></p></td>
     <td align="left" valign="top"><span style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">二、输出结果展示</span><br>
-      <p>输出结果包括IDI，NRI的相关结果。<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例如下</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出结果包括IDI、NRI的相关结果。<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例如下：</p>
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/IDINRI/image4.png" width="441" height="172"  alt=""/></p></td>
   </tr>
 </table>
