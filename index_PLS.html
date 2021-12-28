@@ -22,45 +22,44 @@ body,td,th {
   <tr>
     <td width="600" style="font-size: 50; color: #C06; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">偏最小二乘判别分析</td>
     <td width="80" style="font-size: 32px">&nbsp;</td>
-    <td width="782" style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">一、数据格式</td>
+    <td width="782" style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">一、偏最小二乘判别分析简介</td>
   </tr>
   <tr>
     <td align="center" valign="middle"><article style="font-size: 36px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">
       <p><a href="https://lu-13579.shinyapps.io/PLS1/" target="_blank"><strong>点击此处进入分析界面</strong></a>    </p>
     </article></td>
     <td height="186" align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td rowspan="2" align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image2/PLS/2.png" width="700" height="382"  alt=""/></td>
+    <td rowspan="2" align="left" valign="top"><p style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;偏最小二乘判别分析（PLS-DA）与主成分分析不同，是一种有监督的学习方法，即在建模时用到分组标签的信息。在建立PLS-DA模型时，需要事先指定用于建模的主成分，不同的主成分数对应着不同的PLS-DA模型，一般按照一定的准则选取前面几个主成分建立PLS-DA模型。基于所建立的PLS-DA模型，可计算衡量对模型贡献大小的VIP值。近年来，PLS-DA方法在代谢组学研究中得到了广泛的应用，并成为一种标准的高维数据分析方法。代谢组学中常利用VIP值进行变量筛选，如VIP&gt;1。 </p>
+    <p style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"><span style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">二、数据格式</span></p></td>
   </tr>
   <tr>
-    <td rowspan="7" align="center" valign="top"><img src="image2/PLS/1.jpg" width="600" height="1083"  alt=""/></td>
-    <td rowspan="4" align="left" valign="top">&nbsp;</td>
+    <td rowspan="6" align="center" valign="top"><img src="image2/PLS/1.jpg" width="600" height="1083"  alt=""/></td>
+    <td rowspan="3" align="left" valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td style="font-size: 32px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;"><strong> &nbsp;&nbsp;&nbsp;注： </strong>
-      <article style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、数据格式为“.csv”<br>
-        &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文、阿拉伯数字或下划线的组合<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、自变量列数可以输入多列，以英文状态下的逗号或冒号分隔，如：2,3,4或2:4</article></td>
+    <td height="64" valign="top" style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;<img src="image2/PLS/2.png" width="700" height="382"  alt=""/></td>
   </tr>
   <tr>
-    <td height="64" valign="bottom" style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">二、偏最小二乘判别分析简介</td>
-  </tr>
-  <tr>
-    <td rowspan="2" align="left" valign="top"> <p style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;偏最小二乘判别分析（PLS-DA）与主成分分析不同，是一种有监督的学习方法，即在建模时用到分组标签的信息。在建立PLS-DA模型时，需要事先指定用于建模的主成分，不同的主成分数对应着不同的PLS-DA模型，一般按照一定的准则选取前面几个主成分建立PLS-DA模型。基于所建立的PLS-DA模型，可计算衡量对模型贡献大小的VIP值。近年来，PLS-DA方法在代谢组学研究中得到了广泛的应用，并成为一种标准的高维数据分析方法。代谢组学中常利用VIP值进行变量筛选，如VIP&gt;1。
-    </p>
+    <td rowspan="2" align="left" valign="top"> <p style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif"><span style="font-size: 32px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">
+      <article style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;"><strong style="font-size: 32px">&nbsp;&nbsp;注： </strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、数据格式为“.csv”<br>
+  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文、阿拉伯数字或下划线的组合<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、自变量列数可以输入多列，以英文状态下的逗号或冒号分隔，如：2,3,4或2:4</article>
+    </span></p>
     <article style=" font-size: 20px;"></article></td>
   </tr>
   <tr>
-    <td height="28" valign="top">&nbsp;</td>
+    <td height="180" valign="top">&nbsp;</td>
   </tr>
   <tr>
-    <td height="65" style="font-size: 32px">&nbsp;</td>
+    <td height="52" style="font-size: 32px">&nbsp;</td>
     <td valign="bottom" style="font-size: 32px; color: #C09;">三、输出结果展示</td>
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出结果包括模型的R2X, R2Y, Q2 , 变量的VIP值, PLS-DA得分图等。<br>
+    <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出结果包括模型的R2X、R2Y、Q2、VIP值和PLS-DA得分图。<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例如下： <br>      
-    &nbsp;&nbsp;&nbsp;&nbsp;<img src="image2/PLS/3.png" width="700" height="892"  alt=""/></td>
+    &nbsp;&nbsp;&nbsp;&nbsp;<img src="image2/PLS/3.png" width="700" height="702"  alt=""/></td>
   </tr>
 </table>
 </body>
