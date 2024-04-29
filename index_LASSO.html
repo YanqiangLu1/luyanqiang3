@@ -1,0 +1,69 @@
+<canvas></canvas><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LASSO</title>
+<style type="text/css">
+body {
+	background-image: url(image/image16.png);
+	background-size: 100% 100%;
+	font-size: 18px;
+}
+body,td,th {
+	color: #000;
+	font-size: 24px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+</style>
+</head>
+
+<body>
+<table width="1441" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="600" style="font-size: 50; color: #C06; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">LASSO</td>
+    <td width="68" style="font-size: 32px">&nbsp;</td>
+    <td width="773" style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">一、LASSO简介</td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle"><article style="font-size: 36px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">
+      <p><strong><a href="https://bae00.shinyapps.io/lasso/" target="_blank">点击此处进入分析界面</a></strong> </p>
+    </article></td>
+    <td height="204" align="left" valign="top">&nbsp;</td>
+    <td rowspan="2" align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LASSO（Least Absolute Shrinkage and Selection Operator）是一种基于正则化回归的变量筛选方法。该方法在最小二乘基础上增加了L1范数惩罚项，以回归系数的绝对值之和小于某一固定值为约束条件，将部分无贡献或贡献较小的变量系数压缩为0，从而实现回归系数压缩和特征变量筛选，并提高模型预测性能和简化模型复杂度。&nbsp;&nbsp;
+      <p>&nbsp;</p>
+    <p><span style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">二、数据格式</span></p></td>
+  </tr>
+  <tr>
+    <td rowspan="6" align="center" valign="top"><img src="image2/Lasso/a.png" width="651" height="1109"  alt=""/></td>
+    <td rowspan="3" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="64" valign="top" style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="image2/Lasso/b.png" width="638" height="460"  alt=""/></td>
+  </tr>
+  <tr>
+    <td rowspan="2" align="left" valign="top"> <p><span style="font-size: 32px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;"><strong>&nbsp;&nbsp;注：</strong></span><span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、数据格式为“.csv”，数据中避免中文、空格或特殊字符<br>
+  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文、阿拉伯数字或下划线的组合<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、自变量列数可以输入多列，以英文状态下的逗号或冒号分隔，如：2,3,4或2:4</span><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、因变量可为定量变量、二分类变量和生存变量（包括生存结局和生存时间）<br>
+  <span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、导入数据后，各变量所对应的列数可在输出界面显示和查询 <br>
+ </span>    </p>
+    <article style=" font-size: 20px;"></article></td>
+  </tr>
+  <tr>
+    <td height="28" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="65" style="font-size: 32px">&nbsp;</td>
+    <td valign="bottom" style="font-size: 32px; color: #C09;">三、输出结果展示</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出结果包括筛选的特征变量和对应的模型系数、不同λ值对应的均方误差图以及不同的λ值对应的特征变量系数图。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例如下： <br>      
+    &nbsp;&nbsp;&nbsp;&nbsp;<img src="image2/Lasso/c.png" width="702" height="1014"  alt=""/> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<img src="image2/Lasso/d.png" width="704" height="647"  alt=""/></td>
+  </tr>
+</table>
+</body>
+</html>

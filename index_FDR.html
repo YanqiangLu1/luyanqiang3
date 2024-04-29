@@ -26,14 +26,24 @@ body,td,th {
   </tr>
   <tr>
     <td align="center" valign="middle"><article style="font-size: 36px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">
-      <p><a href="https://lu-13579.shinyapps.io/FDR1/" target="_blank"><strong>点击此处进入分析界面</strong></a>    </p>
+      <p><a href="https://bae00.shinyapps.io/FDRnew/" target="_blank"><strong>点击此处进入分析界面</strong></a>    </p>
     </article></td>
     <td height="186" align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    <td rowspan="2" align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传统的Bonferroni校正方法过于保守，检验效能大大降低。假阳性错误率（false  discovery rate, FDR）的提出则有效解决高维数据的多重比较问题，其既能控制总体一类错误又不降低检验效能。FDR指假阳性数占总体阳性数的比例，其可分为gFDR (global false discovery  rate)和lfdr  (local false discovery rate)两类。gFDR指在规定的检验水准下被判定为阳性的结果中假阳性结果的比例，lfdr则为一次假设检验被判定为阳性结果时其为假阳性结果的概率。
+    <td rowspan="2" align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;假阳性错误率（false discovery rate, FDR）指假阳性数占总体阳性数的比例，其有效解决了高维数据的多重假设检验问题。1995 年Benjamini 和 Hochberg首次提出了FDR的概念，并给出了在多重检验中对它的控制方法（简称 BH-FDR），随后 FDR 的理论和应用研究不断完善和成熟。本平台提供BH-FDR<sup>1</sup>、gFDR（global false discovery rate）<sup>2</sup>和lfdr（local false discovery rate）<sup>2</sup>的实现过程。<br>
+      <ol >
+        <li>
+          &nbsp;&nbsp;&nbsp;&nbsp;Benjamini Y, Hochberg Y. Controlling the False Discovery Rate: A &nbsp;&nbsp;&nbsp;&nbsp;Practical and Powerful Approach to Multiple Testing. Journal of the &nbsp;&nbsp;&nbsp;&nbsp;Royal Statistical Society: Series B (Methodological).  2018; 57(1): &nbsp;&nbsp;&nbsp;&nbsp;289-300.<br> 
+        </li>
+        <li>
+        &nbsp;&nbsp;&nbsp;&nbsp;Strimmer K. fdrtool: a versatile R package for estimating local and &nbsp;&nbsp;&nbsp;&nbsp;tail area-based false discovery rates. Bioinformatics. Jun 15 2008; &nbsp;&nbsp;&nbsp;&nbsp;24(12): 1461-1462. </li>
+      </ol>
+          
+       
+
     <p><span style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">二、数据格式</span> </p></td>
   </tr>
   <tr>
-    <td rowspan="6" align="center" valign="top"><img src="image2/FDR/1.jpg" width="600" height="671"  alt=""/></td>
+    <td rowspan="6" align="center" valign="top"><img src="image2/FDR/1.png" width="600" height="1040"  alt=""/></td>
     <td rowspan="3" align="left" valign="top">&nbsp;</td>
   </tr>
   <tr>

@@ -1,0 +1,74 @@
+<canvas></canvas><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BeSS</title>
+<style type="text/css">
+body {
+	background-image: url(image/image16.png);
+	background-size: 100% 100%;
+	font-size: 18px;
+}
+body,td,th {
+	color: #000;
+	font-size: 24px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+</style>
+</head>
+
+<body>
+<table width="1441" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="600" style="font-size: 50; color: #C06; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">BeSS</td>
+    <td width="68" style="font-size: 32px">&nbsp;</td>
+    <td width="773" style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">一、BeSS简介</td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle"><article style="font-size: 36px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">
+      <p><strong><a href=" https://bae00.shinyapps.io/bess/" target="_blank">点击此处进入分析界面</a></strong> </p>
+    </article></td>
+    <td height="204" align="left" valign="top">&nbsp;</td>
+    <td rowspan="2" align="left" valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BeSS是一种新提出的嵌入式特征子集筛选方法，其利用原始-对偶活动集算法，可用于多重线性回归模型、Logistic和Cox比例风险模型的最佳特征子集识别<sup>1</sup>。BeSS既可以在给定特征子集大小下识别最佳特征子集，又可以自动识别最佳特征子集大小。Bess识别最佳特征子集大小有两种方式，即顺序搜索策略（sequential selection）和黄金搜索策略（golden section selection）。&nbsp;&nbsp;<br>
+      <ol>
+        <li>
+          &nbsp;&nbsp;&nbsp;&nbsp;Wen C, Zhang A, Quan S, Wang X. BeSS: An R Package for Best Subset Selection &nbsp;&nbsp;&nbsp;&nbsp;in Linear, Logistic and Cox Proportional Hazards Models. Journal of Statistical &nbsp;&nbsp;&nbsp;&nbsp;Software. 2020;94(4):1 - 24.</li>
+      </ol>
+
+
+    <p>&nbsp;</p>
+    <p><span style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">二、数据格式</span></p></td>
+  </tr>
+  <tr>
+    <td rowspan="6" align="center" valign="top"><img src="image2/BeSS/a.png" width="630" height="1060"  alt=""/></td>
+    <td rowspan="3" align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="64" valign="top" style="font-size: 32px; color: #C09; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;<img src="image2/BeSS/b.png" width="638" height="460"  alt=""/></td>
+  </tr>
+  <tr>
+    <td rowspan="2" align="left" valign="top"> <p><span style="font-size: 32px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;"><strong>&nbsp;&nbsp;注：</strong></span><span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、数据格式为“.csv”，数据中避免中文、空格或特殊字符<br>
+  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、数据变量名必须为英文、阿拉伯数字或下划线的组合<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、自变量列数可以输入多列，以英文状态下的逗号或冒号分隔，如：2,3,4或2:4</span><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、因变量可为定量变量、二分类变量和生存变量（包括生存结局和生存时间）<br>
+  <span style="font-size: 24px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、导入数据后，各变量所对应的列数可在输出界面显示和查询</span>    </p>
+    <article style=" font-size: 20px;"></article></td>
+  </tr>
+  <tr>
+    <td height="28" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="65" style="font-size: 32px">&nbsp;</td>
+    <td valign="bottom" style="font-size: 32px; color: #C09;">三、输出结果展示</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;输出结果包括识别的最佳特征子集、基于最佳特征子集构建的回归模型和预测表现。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;示例如下： <br>      
+    &nbsp;&nbsp;&nbsp;&nbsp;<img src="image2/BeSS/c.png" width="852" height="975"  alt=""/>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
